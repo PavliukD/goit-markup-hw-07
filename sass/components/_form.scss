@@ -18,10 +18,15 @@
       border-radius: 4px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      background-color: var(--hero-background-color);
+      background-color: $hero-background-color;
+      color: rgba(255, 255, 255, 0.6);
       font-size: 16px;
       line-height: 1.25;
       padding: 15px;
+    }
+
+    &__input:focus {
+      color: rgba(255, 255, 255, 0.6);
     }
   }
   &-group-button {
@@ -36,9 +41,7 @@
     border-radius: 4px;
     border: none;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+    @extend %cubic;
 
     &__text {
       font-size: 16px;

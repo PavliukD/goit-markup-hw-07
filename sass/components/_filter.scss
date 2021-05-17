@@ -19,9 +19,7 @@
     cursor: pointer;
     padding: 6px 22px 6px 22px;
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+    @extend %cubic;
 
     &:hover {
       color: $main-body-color;

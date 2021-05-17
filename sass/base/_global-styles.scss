@@ -23,11 +23,11 @@ ul {
 
 a {
   text-decoration: none;
-  margin: 0p;
+  margin: 0;
 }
 
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 .hidden {
@@ -63,4 +63,9 @@ p {
   font-size: 14px;
   letter-spacing: 0.03em;
   font-weight: 700;
+}
+
+%cubic {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
